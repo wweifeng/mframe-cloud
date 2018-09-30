@@ -1,0 +1,38 @@
+server :
+  port: 8081
+spring: 
+  application:
+    name: provider-user
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource: 
+    platform: h2
+    schema: classpath:initdb/schema.sql
+    data: classpath:initdb/data.sql
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123@localhost:8088/eureka/
+  instance:
+    prefer-ip-address: true    
+    
+logging:
+  level:
+    root:  INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    
+info:
+  app: 
+      name: ${project.artifactId}
+      encoding: ${project.build.sourceEncoding}
+      java: 
+          version: ${java.version}
+      
+  
+  
