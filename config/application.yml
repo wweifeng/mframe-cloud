@@ -1,3 +1,12 @@
 #base config
-mybatis:
-  mapperLocations: "classpath*:/orm/*.xml"
+
+#数据库配置
+spring:
+  datasource:
+     driver-class-name: "com.mysql.jdbc.Driver"
+     initialSize: 1
+     maxActive: 40
+     maxWait: 2000
+     minIdle: 1
+     type: "com.alibaba.druid.pool.DruidDataSource"
+
