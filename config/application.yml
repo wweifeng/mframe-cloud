@@ -1,1 +1,3 @@
 #base config
+mybatis:
+  mapperLocations: "classpath*:/orm/*.xml"
