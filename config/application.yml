@@ -1,12 +1,24 @@
 #base config
 
-#数据库配置
+# druid config数据库配置
 spring:
   datasource:
      driver-class-name: "com.mysql.jdbc.Driver"
-     initialSize: 1
-     maxActive: 40
-     maxWait: 2000
-     minIdle: 1
      type: "com.alibaba.druid.pool.DruidDataSource"
+     druid:
+        initial-size=10
+        min-idle=10
+        max-active:50
+        max-wait:60000
+        time-between-eviction-runs-millis:60000
+	      min-evictable-idle-time-millis:300000
+	      validation-query:SELECT 'x'
+	      test-while-idle:true
+	      test-on-borrow:false
+	      test-on-return:false
+	      pool-prepared-statements:true
+	      max-pool-prepared-statement-per-connection-size:20
+	      filters:wall,stat,log4j
+	      connection-properties:druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+	      useGlobalDataSourceStat:true
 
