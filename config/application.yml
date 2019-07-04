@@ -22,3 +22,7 @@ spring:
         connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
         useGlobalDataSourceStat: true
 
+# mybatis 
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.mframe.cloud.**.domain
