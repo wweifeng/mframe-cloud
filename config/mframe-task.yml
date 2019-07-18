@@ -3,6 +3,11 @@
 #      url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
 #      username: "test"
 #      password: "test"
+mframe:
+  dynamic:
+    datasource:
+      enable: true
+
 spring:
    datasource:
       druid:
