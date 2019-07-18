@@ -12,6 +12,6 @@ spring:
    datasource:
       druid:
         url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
-        master:
-          username: "test"
-          password: "test"
+#        master:
+#          username: "test"
+#          password: "test"
