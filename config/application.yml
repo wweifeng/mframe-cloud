@@ -23,9 +23,9 @@ spring:
         useGlobalDataSourceStat: true
 
 # mybatis 
-mybatis:
-  mapper-locations: classpath:mapper/**/*.xml
-  type-aliases-package: com.mframe.cloud.**.domain
+#mybatis:
+#  mapper-locations: classpath:mapper/**/*.xml
+#  type-aliases-package: com.mframe.cloud.**.domain
 
 #mybaits-plus配置，修改主键类型，mapper.xml、type 别名等
 mybatis-plus:
