@@ -15,3 +15,10 @@ spring:
           url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
           username: "test"
           password: "test"
+spring:
+   datasource:
+      druid:
+        slave-one:
+          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
+          username: "root"
+          password: "root"
