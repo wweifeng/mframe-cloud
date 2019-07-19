@@ -1,25 +1,27 @@
-#spring:
-#   datasource:
-#      url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
-#      username: "test"
-#      password: "test"
-mframe:
-  dynamic:
-    datasource:
-      enable: true
-
 spring:
    datasource:
-      druid:
-        master:
-          url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
-          username: "test"
-          password: "test"
-        slaves[0]:
-          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
-          username: "root"
-          password: "root"
-        slaves[1]:
-          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave-1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
-          username: "test"
-          password: "test"
+      url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
+      username: "test"
+      password: "test"
+
+#动态多数据源开启配置
+#mframe:
+#  dynamic:
+#    datasource:
+#      enable: true
+
+#spring:
+#   datasource:
+#      druid:
+#        master:
+#          url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
+#          username: "test"
+#          password: "test"
+#        slaves[0]:
+#          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
+#          username: "root"
+#          password: "root"
+#        slaves[1]:
+#          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave-1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
+#          username: "test"
+#          password: "test"
