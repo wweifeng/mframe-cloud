@@ -46,3 +46,15 @@ mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: true
+
+# ShradJedis 
+mframe:
+  redis:
+    pool:
+      max-active: 8
+      max-idle: 8
+      min-idle: 0
+      max-wait: -1
+    shards:
+    - host: 127.0.0.1
+      port: 6379
