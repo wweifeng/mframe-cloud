@@ -19,3 +19,7 @@ spring:
           url: "jdbc:mysql://127.0.0.1:3306/testdb-slave?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
           username: "root"
           password: "root"
+        slaves[1]:
+          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave-1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
+          username: "test"
+          password: "test"
