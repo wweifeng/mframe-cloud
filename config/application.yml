@@ -58,3 +58,8 @@ mframe:
     shards:
     - host: 127.0.0.1
       port: 6379
+
+# mongo
+mframe:
+  mongodb:
+    uri: mongodb://test:test@127.0.0.1:40000,127.0.0.1:40001/testdb?replicaSet=mongo
