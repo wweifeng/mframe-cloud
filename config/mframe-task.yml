@@ -25,3 +25,8 @@ spring:
 #          url: "jdbc:mysql://127.0.0.1:3306/testdb-slave-1?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
 #          username: "test"
 #          password: "test"
+
+# mongo
+mframe:
+  mongodb:
+    uri: mongodb://test:test@127.0.0.1:40000,127.0.0.1:40001/testdb?replicaSet=mongo
