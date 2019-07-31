@@ -65,4 +65,5 @@ eureka:
     service-url:
       defaultZone: http://test:test@192.168.99.100:8088/eureka/,http://test:test@192.168.99.100:8188/eureka/
   instance:
-    prefer-ip-address: true #注册IP
+    prefer-ip-address: true # 使用IP注册并指定IP地址,否则在虚拟机上注册的IP可能访问报错
+    ip-address: 192.168.99.100
