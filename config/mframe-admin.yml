@@ -4,9 +4,14 @@ spring:
       username: "test"
       password: "test"
 
-# 配置忽略认证路径
+ # 配置oauth权限忽略
 mframe:
-  oauth:
-    ignore:
-      urls:
-      - /admin/**
+   oauth:
+     ignore:
+       urls:
+       - /admin/**
+       - /swagger-resources/**
+       - /swagger-ui.html
+       - /**/v2/api-docs
+       - /swagger/api-docs
+       
