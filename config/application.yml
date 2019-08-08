@@ -67,3 +67,8 @@ eureka:
   instance:
     prefer-ip-address: true # 使用IP注册并指定IP地址,否则在虚拟机上注册的IP可能访问报错
     ip-address: 127.0.0.1
+
+# 配置actuatord端点访问不需要授权
+management:
+  security:
+    enabled : false
