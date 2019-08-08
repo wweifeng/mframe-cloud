@@ -3,3 +3,14 @@ spring:
       url: "jdbc:mysql://127.0.0.1:3306/testdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
       username: "test"
       password: "test"
+
+# 配置oauth权限忽略
+mframe:
+   oauth:
+     ignore:
+       urls:
+       - /admin/**
+       - /swagger-resources/**
+       - /swagger-ui.html
+       - /**/v2/api-docs
+       - /swagger/api-docs
