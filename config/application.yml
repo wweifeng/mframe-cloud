@@ -58,14 +58,6 @@ mframe:
     shards:
     - host: 127.0.0.1
       port: 6379
-  # 配置oauth权限忽略
-  oauth:
-    ignore:
-      urls:
-      - /swagger-resources/**
-      - /swagger-ui.html
-      - /**/v2/api-docs
-      - /swagger/api-docs
       
 # 注册到eureka server
 eureka:
