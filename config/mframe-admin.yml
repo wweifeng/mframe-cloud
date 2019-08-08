@@ -4,6 +4,7 @@ spring:
       username: "test"
       password: "test"
 
+# 配置忽略认证路径
 mframe:
   oauth:
     ignore:
