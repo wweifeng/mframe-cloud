@@ -4,6 +4,16 @@ spring:
       username: "test"
       password: "test"
 
+# 配置oauth权限忽略
+mframe:
+   oauth:
+     ignore:
+       urls:
+       - /swagger-resources/**
+       - /swagger-ui.html
+       - /**/v2/api-docs
+       - /swagger/api-docs
+
 #动态多数据源开启配置
 #mframe:
 #  dynamic:
