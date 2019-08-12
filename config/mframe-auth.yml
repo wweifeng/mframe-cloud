@@ -1,1 +1,9 @@
-12
+ # 配置oauth权限忽略
+mframe:
+   oauth:
+     ignore:
+       urls:
+       - /swagger-resources/**
+       - /swagger-ui.html
+       - /**/v2/api-docs
+       - /swagger/api-docs
