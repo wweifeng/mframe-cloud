@@ -9,7 +9,7 @@ mframe:
    oauth:
      ignore:
        urls:
-       - /admin/oauth/**
+       - /auth/oauth/**
        - /swagger-resources/**
        - /swagger-ui.html
        - /**/v2/api-docs
