@@ -2,6 +2,8 @@
 
 # druid config数据库配置
 spring:
+  zipkin:
+    base-url: http://localhost  # zipkin链路跟踪
   datasource:
      driver-class-name: "com.mysql.jdbc.Driver"
      type: "com.alibaba.druid.pool.DruidDataSource"
