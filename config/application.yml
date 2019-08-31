@@ -1,14 +1,17 @@
 #base config
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 30000
-hystrix.threadpool.default.keepAliveTimeMinutes: 1
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 10000 # 超时熔断时间
+hystrix.threadpool.default.keepAliveTimeMinutes: 1  # hystrix连接池配置参数
 hystrix.threadpool.default.allowMaximumSizeToDivergeFromCoreSize: true
 hystrix.threadpool.default.coreSize: 10
 hystrix.threadpool.default.maximumSize: 50
-feign.hystrix.enabled: true
+feign.hystrix.enabled: true # 开启feign熔断
 
-spring.cloud.loadbalancer.retry.enabled: true
-ribbon.ReadTimeout: 30000
-ribbon.ConnectTimeout: 30000
+spring.cloud.loadbalancer.retry.enabled: true # 开启ribbon重试机制
+ribbon.ReadTimeout: 3000 # ribbon读取超时时间小于hystrix熔断时间
+ribbon.ConnectTimeout: 3000 # ribbon连接超时时间小于hystrix熔断时间
+ribbon.OkToRetryOnAllOperations: true # 对所有请求都重试
+ribbon.MaxAutoRetriesNextServer: 2 # 切换实例重试次数
+ribbon.MaxAutoRetries: l # 对当前实例重试次数
 
 # druid config数据库配置
 spring:
