@@ -1,4 +1,14 @@
 #base config
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 30000
+hystrix.threadpool.default.keepAliveTimeMinutes: 1
+hystrix.threadpool.default.allowMaximumSizeToDivergeFromCoreSize: true
+hystrix.threadpool.default.coreSize: 10
+hystrix.threadpool.default.maximumSize: 50
+feign.hystrix.enabled: true
+
+spring.cloud.loadbalancer.retry.enabled: true
+ribbon.ReadTimeout: 30000
+ribbon.ConnectTimeout: 30000
 
 # druid config数据库配置
 spring:
