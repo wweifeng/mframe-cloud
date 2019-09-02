@@ -11,7 +11,7 @@ ribbon.ReadTimeout: 3000 # ribbon读取超时时间小于hystrix熔断时间
 ribbon.ConnectTimeout: 3000 # ribbon连接超时时间小于hystrix熔断时间
 ribbon.OkToRetryOnAllOperations: true # 对所有请求都重试
 ribbon.MaxAutoRetriesNextServer: 2 # 切换实例重试次数
-ribbon.MaxAutoRetries: l # 对当前实例重试次数
+ribbon.MaxAutoRetries: 1  # 对当前实例重试次数
 
 # druid config数据库配置
 spring:
